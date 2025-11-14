@@ -2,11 +2,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // Obtener el botón de calcular por su ID
-    const btnCalcular = document.getElementById('btnCalcular');
+    const btnCalcular = document.getElementById('calculateButton');
 
     // Añadir un "escuchador" para el evento 'click'
     btnCalcular.addEventListener('click', function() {
-        
         // --- 1. Obtener valores del formulario ---
         const nombre = document.getElementById('productoNombre').value;
         const precio = parseFloat(document.getElementById('productoPrecio').value);

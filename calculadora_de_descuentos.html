@@ -7,8 +7,8 @@
     
     <!-- 1. Aquí "llamas" a Bootstrap 5 (CSS) -->
     <!-- Esto hace que tu formulario se vea moderno -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="public/vendor/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/vendor/bootstrap-icons.min.css" rel="stylesheet">
 
 </head>
 <body class="bg-light">
@@ -30,20 +30,20 @@
                             
                             <!-- Requisito 2: Nombre del producto -->
                             <div class="col-12">
-                                <label for="productName" class="form-label">Nombre del Producto</label>
-                                <input type="text" class="form-control rounded-3" id="productName" placeholder="Ej: Laptop, Camisa...">
+                                <label for="productoNombre" class="form-label">Nombre del Producto</label>
+                                <input type="text" class="form-control rounded-3" id="productoNombre" placeholder="Ej: Laptop, Camisa...">
                             </div>
                             
                             <!-- Requisito 3: Precio del producto -->
                             <div class="col-12">
-                                <label for="productPrice" class="form-label">Precio del Producto ($)</label>
-                                <input type="number" class="form-control rounded-3" id="productPrice" placeholder="Ej: 150.00">
+                                <label for="productoPrecio" class="form-label">Precio del Producto ($)</label>
+                                <input type="number" class="form-control rounded-3" id="productoPrecio" placeholder="Ej: 150.00">
                             </div>
                             
                             <!-- Requisito 4: Tipo de cliente -->
                             <div class="col-md-6">
-                                <label for="clientType" class="form-label">Tipo de Cliente</label>
-                                <select class="form-select rounded-3" id="clientType">
+                                <label for="clienteTipo" class="form-label">Tipo de Cliente</label>
+                                <select class="form-select rounded-3" id="clienteTipo">
                                     <option value="" selected disabled>Seleccione una opción...</option>
                                     <option value="estudiante">Estudiante</option>
                                     <option value="adulto">Adulto</option>
@@ -53,8 +53,8 @@
                             
                             <!-- Requisito 5: Forma de pago -->
                             <div class="col-md-6">
-                                <label for="paymentMethod" class="form-label">Forma de Pago</label>
-                                <select class="form-select rounded-3" id="paymentMethod">
+                                <label for="formaPago" class="form-label">Forma de Pago</label>
+                                <select class="form-select rounded-3" id="formaPago">
                                     <option value="" selected disabled>Seleccione una opción...</option>
                                     <option value="efectivo">Efectivo</option>
                                     <option value="tarjeta">Tarjeta</option>
@@ -71,7 +71,7 @@
                         </div>
 
                         <!-- Requisito 7: Espacio para mostrar el resultado (Clase "alert", "list-group" son de Bootstrap) -->
-                        <div id="resultsArea" class="mt-4 d-none"> <!-- "d-none" la oculta por defecto -->
+                        <div id="divResultado" class="mt-4 d-none"> <!-- "d-none" la oculta por defecto -->
                             <hr>
                             <h3 class="h5 text-center mb-3">Resultados del Cálculo</h3>
                             
