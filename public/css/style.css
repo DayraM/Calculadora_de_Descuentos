@@ -1,0 +1,48 @@
+
+body {
+    /* Un fondo con un gradiente suave para un look más moderno */
+    background: linear-gradient(120deg, #f4f7f6 0%, #e9f0ee 100%);
+    /* Aseguramos que ocupe toda la altura de la pantalla */
+    min-height: 100vh;
+}
+
+.card {
+    /* Quitamos el borde por defecto de la tarjeta */
+    border: none;
+    /* Hacemos la sombra un poco más pronunciada y suave */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Bordes más redondeados */
+    border-radius: 12px;
+    /* Transición para el hover (efecto al pasar el mouse) */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    /* Al pasar el mouse, la tarjeta se "levanta" un poco */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+    /* Damos un color más oscuro y moderno al título */
+    color: #2c3e50;
+    font-weight: 600; /* Hacemos la fuente un poco más gruesa */
+}
+
+/* Estilos para el botón principal de Bootstrap */
+.btn-primary {
+    /* Un color principal más vibrante */
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 500;
+    padding: 12px; /* Hacemos el botón un poco más alto */
+    border-radius: 8px; /* Bordes redondeados para el botón */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    /* Oscurecemos el botón al pasar el mouse y un leve efecto de movimiento */
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-2px);
+}
