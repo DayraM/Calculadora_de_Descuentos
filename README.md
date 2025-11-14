@@ -34,13 +34,13 @@ Resumen de resultados detallado que muestra el precio original, el porcentaje de
 
 🛠️ **Tecnologías Utilizadas**
 
-HTML5: Estructura semántica de la página.
+HTML: Estructura semántica de la página.
 
 Bootstrap 5: Framework CSS para diseño responsive y componentes modernos.
 
-JavaScript ES6: Lógica de descuentos, manipulación del DOM y manejo de eventos.
+JavaScript: Lógica de descuentos
 
-CSS3: Archivo style.css para estilos personalizados adicionales.
+CSS: Archivo style.css para estilos personalizados adicionales.
 
 📦 **INSTALACIÓN**
 
@@ -50,7 +50,7 @@ Navegador web moderno (Chrome, Firefox, Safari, Edge).
 
 Git (para clonar el repositorio).
 
-Editor de código (Recomendado: VS Code).
+Editor de código (Recomendadamos VS Code).
 
 
 
