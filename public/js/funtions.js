@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
         let descuentoCliente = 0;
 
         if (tipoCliente === 'estudiante') {
-            descuentoCliente = 20; // 20%
+            descuentoCliente = 20;
         } else if (tipoCliente === 'adulto') {
-            descuentoCliente = 10; // 10%
+            descuentoCliente = 10;
         } else if (tipoCliente === 'jubilado') {
-            descuentoCliente = 30; // 30%
+            descuentoCliente = 30;
         }
 
         // --- 3. Lógica de Descuento Adicional (Operador Ternario) ---
@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Si la validación falló antes, el 'innerHTML' fue reemplazado. 
         // Por simplicidad, recargaremos la estructura interna.
         divResultado.innerHTML = `
-            <h4 class="alert-heading">¡Cálculo Exitoso!</h4>
             <p><strong>Producto:</strong> <span id="resultadoNombre"></span></p>
             <p><strong>Precio Original:</strong> $<span id="resultadoPrecioOriginal"></span></p>
             <p><strong>Descuento Total:</strong> <span id="resultadoDescuento"></span>%</p>

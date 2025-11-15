@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Descuentos</title>
+    <title>G3 - Calculadora de Descuentos</title>
     
     <!-- 1. Aquí "llamas" a Bootstrap 5 (CSS) -->
-    <!-- Esto hace que tu formulario se vea moderno -->
     <link href="public/vendor/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/vendor/bootstrap-icons.min.css" rel="stylesheet">
 
 </head>
 <body class="bg-light">
 
-    <!-- Requisito 1: Interfaz con HTML y Bootstrap 5 -->
-    <!-- Clases como "container", "card", "shadow-sm" son de Bootstrap -->
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-7">
@@ -25,7 +22,7 @@
                     </div>
                     <div class="card-body p-4 p-md-5">
                         
-                        <!-- Formulario de Entrada (Clases "form-label", "form-control", "form-select" son de Bootstrap) -->
+                        <!-- Formulario de Entrada -->
                         <div class="row g-3">
                             
                             <!-- Requisito 2: Nombre del producto -->
@@ -62,7 +59,7 @@
                                 </select>
                             </div>
                             
-                            <!-- Requisito 6: Botón para realizar el cálculo (Clase "btn btn-primary" es de Bootstrap) -->
+                            <!-- Requisito 6: Botón para realizar el cálculo -->
                             <div class="col-12 mt-4">
                                 <button type="button" class="btn btn-primary w-100 py-2 rounded-3" id="calculateButton">
                                     <i class="bi bi-calculator me-2"></i>Calcular Precio Final
@@ -70,8 +67,8 @@
                             </div>
                         </div>
 
-                        <!-- Requisito 7: Espacio para mostrar el resultado (Clase "alert", "list-group" son de Bootstrap) -->
-                        <div id="divResultado" class="mt-4 d-none"> <!-- "d-none" la oculta por defecto -->
+                        <!-- Requisito 7: Espacio para mostrar el resultado -->
+                        <div id="divResultado" class="mt-4 d-none">
                             <hr>
                             <h3 class="h5 text-center mb-3">Resultados del Cálculo</h3>
                             
@@ -108,7 +105,6 @@
     </div>
 
     <script src="public/vendor/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
     <script src="public/js/funtions.js"></script>
 </body>
 </html>
