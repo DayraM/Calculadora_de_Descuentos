@@ -87,3 +87,21 @@ document.addEventListener('DOMContentLoaded', function() {
         divResultado.classList.remove('d-none');
     });
 });
+// Aporte Evelyn ---
+// --- Lógica para el Modo Oscuro ---
+// 1. Obtener el interruptor que acabamos de crear en HTML
+const toggleSwitch = document.getElementById('darkModeToggle');
+
+// 2. Función que se ejecuta cuando cambia el interruptor
+function switchTheme(e) {
+    if (e.target.checked) {
+        
+        document.documentElement.setAttribute('data-bs-theme', 'dark');
+    } else {
+       
+        document.documentElement.removeAttribute('data-bs-theme');
+    }    
+}
+
+// 3. Poner un "escuchador" para el evento 'change' (cuando se activa/desactiva)
+toggleSwitch.addEventListener('change', switchTheme);
